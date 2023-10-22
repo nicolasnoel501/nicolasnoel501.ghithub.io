@@ -1,0 +1,279 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+  margin: 16px 0;
+}
+.header img {
+  height: 36px;
+}
+.header__return {
+  display: flex;
+  align-items: center;
+  padding: 6px;
+}
+
+.hero__header img {
+  height: 275px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.main {
+  margin-top: -40px;
+  border-radius: 35px 35px 0 0;
+  background-color: #f6f6f6;
+  position: relative;
+  padding: 15px 5px 0 5px;
+}
+.main .main__container {
+  margin: 0 10px;
+}
+.main__title {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 16px;
+}
+.main__title__text {
+  font-family: "Shrikhand";
+  font-size: 28px;
+  font-weight: normal;
+}
+.main__title__icon {
+  font-size: 24px;
+}
+.main__title .fa-heart {
+  transition: all 0.3s;
+}
+.main__title .fa-heart:hover {
+  font-weight: 900;
+  background: -webkit-linear-gradient(13deg, rgb(255, 121, 218) 0%, rgb(186, 98, 219) 66%);
+  color: transparent;
+  -webkit-background-clip: text;
+  cursor: pointer;
+}
+.main .title__section__card {
+  font-size: 16px;
+  border-bottom: 3px solid rgb(153, 226, 208);
+  width: 40px;
+  margin-left: 8px;
+}
+
+.entries .turntable__article {
+  transition: 0.5s;
+  animation: slidedown1 1s;
+}
+
+.turntable__section .turntable__article {
+  transition: 0.7s;
+  animation: slidedown2 2s;
+}
+
+.desserts .turntable__article {
+  transition: 0.9s;
+  animation: slidedown3 3s;
+}
+
+.turntable__article {
+  background-color: #fff;
+  padding: 16px;
+  display: flex;
+  border-radius: 12px;
+  margin: 16px 0;
+  box-shadow: 0px 4.0115px 15.0431px 0px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+}
+.turntable__article .turntable__text {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  flex: 1;
+}
+.turntable__article .turntable__text h3 {
+  font-size: 18px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.turntable__article .turntable__text p {
+  font-size: 15px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.turntable__article .turntable__price {
+  font-weight: 700;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-left: 8px;
+  transition: transform 0.3s;
+}
+.turntable__article .turntable__icon {
+  background: #99e2d0;
+  cursor: pointer;
+  height: auto;
+  width: 0;
+  opacity: 0;
+  border-radius: 0 15px 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.5s ease-in-out, width 0.5s ease-in-out, opacity 0.5s ease-in-out, background 0.5s;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.turntable__article:hover .turntable__icon {
+  width: 59px;
+  opacity: 1;
+  background: rgb(153, 226, 208);
+  transition: transform 0.5s ease-in-out, width 0.5s ease-in-out, opacity 0.5s ease-in-out, background 0.5s;
+}
+.turntable__article:hover .turntable__price {
+  transform: translateX(-55px);
+  transition: transform 0.5s;
+}
+.turntable__article .fa-circle-check {
+  font-size: 20px;
+  color: white;
+  transform: rotate(360deg);
+  transition: 0.4s ease-in-out;
+}
+.turntable__article:hover .fa-circle-check {
+  transform: rotate(0);
+}
+.turntable__article:hover .turntable__text p {
+  width: 80%;
+}
+
+.order {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+}
+.order .order__button {
+  cursor: pointer;
+  height: 50px;
+  border: 1px;
+  border-radius: 25px;
+  background-color: #9356DC;
+  width: 218px;
+  color: white;
+  font-size: 16px;
+  margin-bottom: 64px;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  transition: background 0.3s, box-shadow 0.3s, filter 0.3s;
+}
+.order .order__button:hover {
+  background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%), linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15));
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+  filter: brightness(1.2);
+}
+
+.footer {
+  background: rgb(53, 53, 53);
+  margin-top: 16px;
+}
+.footer__container {
+  padding: 20px;
+}
+.footer__title {
+  font-family: "Shrikhand";
+  color: white;
+}
+.footer__navbar {
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+.footer a {
+  text-decoration: none;
+  color: white;
+  margin: 16px 0;
+  pointer-events: none;
+}
+.footer i {
+  padding: 0 8px 0 0;
+}
+
+@keyframes slidedown1 {
+  from {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slidedown2 {
+  from {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slidedown3 {
+  from {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@media (min-width: 768px) {
+  .main {
+    display: flex;
+    justify-content: center;
+    margin: -40px 40px 0;
+  }
+  .turntable__article {
+    width: 634px;
+  }
+  .footer__container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  .footer__title {
+    margin-left: 10px;
+  }
+  .footer__navbar {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+  }
+}
+@media (min-width: 1024px) {
+  .header {
+    display: flex;
+    justify-content: flex-start;
+    gap: 45%;
+  }
+  .main {
+    margin: -40px 100px 0;
+  }
+}/*# sourceMappingURL=menu.css.map */

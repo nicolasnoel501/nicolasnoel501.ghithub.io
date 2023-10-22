@@ -1,0 +1,219 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+a:active{
+    color: black;
+}
+
+.header {
+    &__logo {
+        display: flex;
+        justify-content: center;
+        height: 36px;
+        margin: 16px;
+    }
+
+    &__map {
+        background-color: rgba(234, 234, 234, 1);
+        
+
+    }
+
+    &__map__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 10px;
+        gap: 20px;
+    }
+
+    &__main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #F6F6F6;
+    }
+}
+
+.header__main {
+    display: flex;
+    flex-direction: column;
+    background-color: #F6F6F6;
+    align-items: center;
+    gap: 16px;
+    padding: 16px;
+
+    &__title {
+        text-align: center;
+        font-size: 24px;
+    }
+
+    &__button {
+        cursor: pointer;
+        height: 50px;
+        border: 1px;
+        border-radius: 25px;
+        background-color: $primary;
+        width: 218px;
+        color: white;
+        font-size: 16px;
+        margin-bottom: 64px;
+        box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+        background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+        transition: background 0.3s, box-shadow 0.3s;
+    }
+
+    &__button:hover {
+        background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%),
+        linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15));
+        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+        filter: brightness(1.1);
+    }
+}
+
+    .main__operation {
+
+        &__title {
+        margin-top: 16px;
+        margin-left: 16px;
+       margin-bottom: 16px;
+       font-size: 24px;
+    }
+}
+
+.main__operation__article {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 20px;
+    background: rgba(246, 246, 246, 1);
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+    height: 72px;
+    width: 322px;
+    margin-left: 25px;
+    margin-bottom: 16px;
+    padding: 0 32px 0 0;
+    
+    .main__operation__number {
+        border: solid 1px rgba(147, 86, 220, 1);
+        background-color: rgba(147, 86, 220, 1);
+        border-radius: 20px;
+        height: 24px;
+        color: white;
+        width: 24px;
+        padding-left: 5px;
+        margin-left: -10px;
+    }
+}
+
+.fa-mobile-screen-button, .fa-list-ul{
+    color: 
+    rgba(126, 126, 126, 1);
+}
+
+.fa-store {
+    color: $primary;
+}
+
+
+
+.main__section__card {
+    margin: 64px 0 0;
+    background: rgba(246, 246, 246, 1);
+    width: 100%;
+    padding: 0 16px;
+
+    &__title {
+        font-size: 24px;
+        margin-bottom: 16px;
+    }
+
+    .card__food {
+        display: grid;
+        gap: 16px;
+    }
+
+    .food__card {
+        width: 100%;
+        background-color: #fff;
+        border: 1px solid #e0e0e0;
+        border-radius: 15px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .card__image {
+        position: relative;
+        
+    }
+
+    .badge__card {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: rgba(153, 226, 208, 1);
+        color: rgba(0, 135, 102, 1);
+        padding: 5px 10px; 
+        border-radius: 2px; 
+        font-size: 14px; 
+        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+
+    }
+    
+
+    .card__article {
+        display: flex;
+        flex-direction: column;
+    }
+
+    & img {
+        width: 100%;
+        height: 231px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        object-fit: cover;
+    }
+
+    .card__content {
+        padding: 16px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .card__txt {
+        color: black;
+        text-decoration: none;
+    }
+
+    .card__title {
+        font-size: 18px;
+        
+    }
+
+    .card__icon {
+        font-size: 24px;
+    }
+
+    .fa-heart{
+        transition: all 0.3s;
+    }
+
+    .fa-heart:hover{
+        font-weight: 900;
+        background:-webkit-linear-gradient(13deg, rgba(255,121,218,1) 0%, rgba(186,98,219,1) 66%);
+        color: transparent;
+        -webkit-background-clip: text;
+        cursor: pointer;
+    }
+
+
+}

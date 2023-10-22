@@ -1,0 +1,42 @@
+@media (min-width:768px) {
+    .main__operation__container{
+        display: flex;
+        margin: 0 25px;
+    }
+    
+    .fa-mobile-screen-button, .fa-list-ul, .fa-store{
+        padding: 20px;
+    }
+
+    .card__food {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .footer__container {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    .footer__title {
+        margin-left: 10px;
+    }
+
+    .footer__navbar {
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+    }
+}
+
+
+@media (min-width:1025px) {
+    .operation {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        flex-wrap: wrap;
+}
+    }
+

@@ -1,0 +1,41 @@
+@media (min-width:768px) {
+
+    .main {
+        display: flex;
+        justify-content: center;
+        margin: -40px 40px 0;
+    }
+
+    .turntable__article {
+        width: 634px;
+    }
+
+    .footer__container {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    .footer__title {
+        margin-left: 10px;
+    }
+
+    .footer__navbar {
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+    }
+}
+
+@media (min-width:1024px){
+    
+    .header {
+        display: flex;
+        justify-content: flex-start;
+        gap: 45%;
+    }
+
+    .main{
+    margin: -40px 100px 0;
+    }
+}
